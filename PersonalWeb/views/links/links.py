@@ -1,10 +1,15 @@
 import reflex as rx
 from PersonalWeb.components.link_button import link_button
+from PersonalWeb.components.title import title
 
 def links() -> rx.Component:
     return rx.vstack(
-        link_button("GitHub", "https://github.com/Julitown46"),
-        link_button("LinkedIn", "www.linkedin.com/in/julian-moreno-1408b133a"),
-        link_button("Gmail", ""),
-        link_button("Instagram", "https://www.instagram.com/julitown46/")
+        title("Professional Links"),
+        link_button("github", "GitHub", "View my GitHub Projects!", "https://github.com/Julitown46"),
+        link_button("linkedin", "LinkedIn", "Connect on LinkedIn", "https://www.linkedin.com/in/julian-moreno-1408b133a"),
+        link_button("mail", "Gmail", "Contact me!", "mailto:morenojulian4502@gmail.com"),
+        title("Social Links"),
+        link_button("instagram", "Instagram", "My main social media account","https://www.instagram.com/julitown46/"),
+        link_button("music", "Spotify", "Follow me on Spotify!",""),
+        width="100%",
     )
