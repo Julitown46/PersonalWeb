@@ -49,6 +49,5 @@ def header() -> rx.Component:
         rx.text("Hello world! I am Julián Moreno Cuenca, a recent graduate in Web Application Development, with hands-on experience in Python, Django, and JavaScript, and a solid academic background in Java and Angular, which have been the core technologies throughout my training and projects. " \
         "My goal is to grow as a web developer, contribute value to innovative technology projects, and continue expanding my knowledge in the IT sector.",
         color= TextColor.BODY.value),
-        spacing="4",
         align_items="start",
     )

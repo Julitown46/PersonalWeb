@@ -19,7 +19,7 @@ def index() -> rx.Component:
                 align_items="center",
                 max_width=styles.MAX_WIDTH,
                 width="100%",
-                margin_y=Size.LARGE.value,
+                margin_bottom=Size.LARGE.value,
                 padding=Size.LARGE.value,
             )
         ),

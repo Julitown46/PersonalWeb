@@ -8,11 +8,8 @@ def footer() -> rx.Component:
         rx.text("Built with Reflex", font_size=Size.MEDIUM.value),
         rx.text(f"© 2024-{datetime.date.today().year} Julian Moreno. All rights reserved.", font_size=Size.MEDIUM.value),
         text_align="center",
-        padding_y="4",
         width="100%",
-        border_color="gray.200",
         margin_top="auto",
-        margin_bottom=Size.LARGE.value,
         padding_bottom=Size.LARGE.value,
         color=TextColor.FOOTER.value,
     )
