@@ -1,5 +1,6 @@
 import reflex as rx
 import PersonalWeb.styles.styles as styles
+from PersonalWeb.styles.styles import Size
 
 def link_button(icon: str, title: str, body: str, url: str) -> rx.Component:
     return rx.link(

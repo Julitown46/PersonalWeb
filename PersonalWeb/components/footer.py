@@ -1,6 +1,7 @@
 import reflex as rx
 import datetime
 from PersonalWeb.styles.styles import Size as Size
+from PersonalWeb.styles.colors import TextColor
 
 def footer() -> rx.Component:
     return rx.box(
@@ -12,4 +13,6 @@ def footer() -> rx.Component:
         border_color="gray.200",
         margin_top="auto",
         margin_bottom=Size.LARGE.value,
+        padding_bottom=Size.LARGE.value,
+        color=TextColor.FOOTER.value,
     )

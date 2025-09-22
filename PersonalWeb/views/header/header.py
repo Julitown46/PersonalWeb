@@ -1,21 +1,33 @@
 import reflex as rx
 from PersonalWeb.components.link_icon import link_icon
 from PersonalWeb.components.info_text import info_text
+from PersonalWeb.styles.styles import Size
+from PersonalWeb.styles.colors import Color, TextColor
 
 def header() -> rx.Component:
     return rx.vstack(
         rx.hstack(
-            rx.avatar(fallback="JMC", size="8"),
+            rx.avatar(fallback="JMC",
+                      src="avatar.jpg",
+                      size="9",
+                      color= TextColor.BODY.value,
+                      bg= Color.CONTENT.value),
             rx.vstack(
-                rx.text("Julian Moreno Cuenca", size="7", font_weight="bold"),
-                rx.text("FullStack Developer", size="5"),
+                rx.heading("Julian Moreno Cuenca", size="8", 
+                        font_weight="bold",
+                        color= TextColor.HEADER.value),
+                rx.text("FullStack Developer", 
+                        size="6",
+                        color= Color.SECONDARY.value),
                 rx.hstack(
-                    link_icon("https://hola.com"),
-                    link_icon("https://hola.com"),
-                    link_icon("https://hola.com"),
+                    link_icon("icons/python.svg", "https://www.python.org/"),
+                    link_icon("icons/java.svg", "https://www.java.com/es/"),
+                    link_icon("icons/angular.svg", "https://angular.dev/"),
+                    link_icon("icons/docker.svg", "https://www.docker.com/"),
+                    margin_top=Size.SMALL.value,
                 ),
                 width="100%",
-                spacing="2",
+                spacing="3",
             ), 
             spacing="4",
         ),
@@ -26,9 +38,11 @@ def header() -> rx.Component:
             rx.spacer(),
             info_text("+1","year with Python & Django"),
             width="100%",
+            margin_y=Size.MEDIUM.value,
         ),
         rx.text("Hello world! I am Julián Moreno Cuenca, a recent graduate in Web Application Development, with hands-on experience in Python, Django, and JavaScript, and a solid academic background in Java and Angular, which have been the core technologies throughout my training and projects. " \
-        "My goal is to grow as a web developer, contribute value to innovative technology projects, and continue expanding my knowledge in the IT sector."),
+        "My goal is to grow as a web developer, contribute value to innovative technology projects, and continue expanding my knowledge in the IT sector.",
+        color= TextColor.BODY.value),
         spacing="4",
         align_items="start",
     )
