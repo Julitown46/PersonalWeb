@@ -7,6 +7,7 @@ def navbar() -> rx.Component:
         rx.image(
             src="logo.png",
             height=Size.XXLARGE.value,
+            width=Size.XXLARGE.value,
             alt="Logo",
         ),
         rx.text(

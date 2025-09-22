@@ -14,6 +14,7 @@ class Size(Enum):
     LARGE = "2em"
     XLARGE = "3.5em"
     XXLARGE = "4.5em"
+    XXXLARGE = "8.5em"
 
 #Stylesheets
 
